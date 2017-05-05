@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-
-class Hello extends Component {
-  render() {
-    return (
-      <h1>Hello {this.props.name}!</h1>
-    );
-  }
-}
+import Hello from './Hello';
 
 class App extends Component {
   render() {
