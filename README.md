@@ -4,7 +4,7 @@
 
 ## Hello World Component
 
-Use component to show hello world.
+Usar un Component y sus props.
 
 ---
 
