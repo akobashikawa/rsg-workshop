@@ -2,9 +2,9 @@
 
 # Workshop
 
-## Conditional Presentation
+## DOM reference
 
-Use conditional presentation of html.
+Referenciar elementos del DOM.
 
 ---
 
