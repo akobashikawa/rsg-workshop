@@ -4,17 +4,18 @@ class Input extends Component {
 	constructor(props) {
 		super(props);
 
-		this.changeHandler = this.changeHandler.bind(this);
+		this.clickHandler = this.clickHandler.bind(this);
 	}
 
-	changeHandler(event) {
-		this.props.onChange(event.target.value);
+	clickHandler() {
+		this.props.onClick(this.nameInput.value);
 	}
 
   render() {
     return (
     	<div className="Input">
-    		<input type="text" onChange={this.changeHandler} />
+    		<input type="text" ref={input => this.nameInput = input}/>
+    		<button onClick={this.clickHandler}>Hello</button>
     	</div>
     );
   }

@@ -2,9 +2,9 @@
 
 # Workshop
 
-## Hello World Component
+## Conditional Presentation
 
-Use component to show hello world.
+Use conditional presentation of html.
 
 ---
 
