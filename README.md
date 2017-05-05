@@ -2,9 +2,9 @@
 
 # Workshop
 
-## Hello World Component
+## Simple Props
 
-Use component to show hello world.
+Usar props para pasar valores a un componente simple.
 
 ---
 
