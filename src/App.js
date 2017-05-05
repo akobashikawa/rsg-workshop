@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
 
-const Hello = (props) => (
-  <h1>Hello {props.name}!</h1>
-);
+class Hello extends Component {
+  render() {
+    return (
+      <h1>Hello {this.props.name}!</h1>
+    );
+  }
+}
 
 class App extends Component {
   render() {
