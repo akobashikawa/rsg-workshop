@@ -2,9 +2,9 @@
 
 # Workshop
 
-## Hello World Component
+## Component state
 
-Use component to show hello world.
+Usar el state del Component
 
 ---
 
