@@ -2,9 +2,9 @@
 
 # Workshop
 
-## Hello World Component
+## Import Component
 
-Use component to show hello world.
+Usar un componente en otro archivo.
 
 ---
 
