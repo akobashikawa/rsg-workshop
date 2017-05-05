@@ -12,10 +12,10 @@ class App extends Component {
       name: ''
     };
 
-    this.clickHandler = this.clickHandler.bind(this);
+    this.changeHandler = this.changeHandler.bind(this);
   }
 
-  clickHandler(name) {
+  changeHandler(name) {
     this.setState({
       name: name
     });
@@ -24,12 +24,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Input onClick={this.clickHandler} />
+        <Input onChange={this.changeHandler} />
 
         {this.state.name && (
           <Hello name={this.state.name} />
         )}
-        
+
       </div>
     );
   }
