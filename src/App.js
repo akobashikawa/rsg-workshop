@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-const HelloWorld = () => (
-  <h1>Hello React World!</h1>
+const Hello = (props) => (
+  <h1>Hello {props.name}!</h1>
 );
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <HelloWorld />
-        <HelloWorld />
-        <HelloWorld />
+        <Hello name="World" />
+        <Hello name="Juan" />
+        <Hello name="Mary" />
       </div>
     );
   }
