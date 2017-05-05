@@ -4,7 +4,7 @@
 
 ## Conditional Presentation
 
-Use conditional presentation of html.
+Presentar html condicionalmente.
 
 ---
 
