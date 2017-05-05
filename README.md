@@ -2,9 +2,9 @@
 
 # Workshop
 
-## Hello World
+## Hello World Component
 
-Show hello world message.
+Use component to show hello world.
 
 ---
 
