@@ -2,9 +2,9 @@
 
 # Workshop
 
-## Hello World Component
+## Sibling components
 
-Use component to show hello world.
+Dos componentes hermanos colaborando.
 
 ---
 
