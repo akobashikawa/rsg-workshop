@@ -2,7 +2,7 @@
 
 # Workshop
 
-## Hello World Component
+## Component props
 
 Usar un Component y sus props.
 
