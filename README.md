@@ -2,9 +2,9 @@
 
 # Workshop
 
-## Prevent Default
+## Simple Routes
 
-Prevenir el default onSubmit.
+Usar React Router para establecer algunas rutas simples.
 
 ---
 
