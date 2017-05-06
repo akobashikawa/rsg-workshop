@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 
+// https://github.com/kevgathuku/react-bootstrap-jquery/blob/master/src/index.js
+// https://github.com/ryanflorence/react-training/blob/gh-pages/lessons/05-wrapping-dom-libs.md
+import $ from 'jquery';
+import 'bootstrap/dist/css/bootstrap.css';
+window.jQuery = $;
+require('bootstrap');
+
+import logo from './logo.svg';
 import './App.css';
 
 const Home = () => (
@@ -68,23 +76,63 @@ class Post extends Component {
 */
 
 
+const Navbar = (props) => (
+  <nav className="navbar navbar-inverse navbar-fixed-top">
+    <div className="container-fluid">
+      <div className="navbar-header">
+
+        <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span className="sr-only">Toggle navigation</span>
+          <span className="icon-bar"></span>
+          <span className="icon-bar"></span>
+          <span className="icon-bar"></span>
+        </button>
+
+        <Link to={'/'} className="navbar-brand" >
+          <img src={logo} className="App-logo" alt="logo" />
+          React Workshop
+        </Link>
+
+      </div>
+      <div id="navbar" className="navbar-collapse collapse">
+        <ul className="nav navbar-nav navbar-right">
+          <li><Link to={'/about'}>About</Link></li>
+          <li><Link to={'/contact'}>Contact</Link></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+);
+
 class App extends Component {
   render() {
     return (
       <Router>
         <div className="App">
-          <nav>
-            <Link to={'/'}>Home</Link>
-            <Link to={'/about'}>About</Link>
-            <Link to={'/contact'}>Contact</Link>
-            {posts.map( post => <Link to={`/post/${post.id}`} key={post.id}>{post.title}</Link> )}
-          </nav>
+          
+          <Navbar />
+
           <main>
-            <Route path="/" exact component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/post/:postId" component={Post} />
+            <div className="container-fluid">
+              <div className="row">
+
+                <div className="col-sm-3 col-md-2 sidebar">
+                  <ul className="nav nav-sidebar">
+                    {posts.map( post => <li key={post.id}><Link to={`/post/${post.id}`}>{post.title}</Link></li> )}
+                  </ul>
+                </div>
+
+                <div className="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2">
+                  <Route path="/" exact component={Home} />
+                  <Route path="/about" component={About} />
+                  <Route path="/contact" component={Contact} />
+                  <Route path="/post/:postId" component={Post} />
+                </div>
+
+              </div>
+            </div>
           </main>
+
         </div>
       </Router>
     );
