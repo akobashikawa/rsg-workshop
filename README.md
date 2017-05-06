@@ -13,6 +13,7 @@
 - [07-sibling-components](https://github.com/akobashikawa/rsg-workshop/tree/07-sibling-components)
 - [08-conditional-presentation](https://github.com/akobashikawa/rsg-workshop/tree/08-conditional-presentation)
 - [09-dom-reference](https://github.com/akobashikawa/rsg-workshop/tree/09-dom-reference)
+- [10-prevent-default](https://github.com/akobashikawa/rsg-workshop/tree/10-prevent-default)
 
 ---
 
