@@ -6,6 +6,9 @@
 
 - Clonar el repositorio.
 - Ir a la rama: `$ git checkout branch_name`
+- Instalar dependencias: `$ npm install`
+- Correr: `$ npm run`
+- http://localhost:3000
 
 ## Ramas
 
