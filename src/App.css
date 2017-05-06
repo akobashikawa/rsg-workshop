@@ -22,3 +22,12 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+nav a {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+.page {
+  border: 1px solid #aaa;
+  padding: 1em;
+}
