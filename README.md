@@ -2,9 +2,9 @@
 
 # Workshop
 
-## DOM reference
+## Prevent Default
 
-Referenciar elementos del DOM.
+Prevenir el default onSubmit.
 
 ---
 

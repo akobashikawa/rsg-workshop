@@ -4,18 +4,21 @@ class Input extends Component {
 	constructor(props) {
 		super(props);
 
-		this.clickHandler = this.clickHandler.bind(this);
+		this.submitHandler = this.submitHandler.bind(this);
 	}
 
-	clickHandler() {
+	submitHandler(event) {
 		this.props.onClick(this.nameInput.value);
+		event.preventDefault();
 	}
 
   render() {
     return (
     	<div className="Input">
-    		<input type="text" ref={input => this.nameInput = input}/>
-    		<button onClick={this.clickHandler}>Hello</button>
+    		<form onSubmit={this.submitHandler}>
+	    		<input type="text" ref={input => this.nameInput = input}/>
+	    		<button>Hello</button>
+    		</form>
     	</div>
     );
   }
