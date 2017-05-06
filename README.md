@@ -2,9 +2,9 @@
 
 # Workshop
 
-## Bootstrap + jQuery
+## Hellos
 
-Usar Bootstrap para el layout.
+Reutilizando componentes en varias rutas.
 
 ---
 

@@ -11,11 +11,15 @@ require('bootstrap');
 import logo from './logo.svg';
 import './App.css';
 
+import HelloWorld from './HelloWorld';
+import HelloYou from './HelloYou';
+import Hellos from './Hellos';
+
 const Home = () => (
   <div className="Home page">
     <h1>Home</h1>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ad, ipsa rerum sit! Temporibus minima placeat commodi optio explicabo fugiat, rerum modi autem molestiae accusantium ratione. Exercitationem omnis, minus distinctio.
+      React Study Group - Workshop 2017/05/06
     </p>
   </div>
 );
@@ -24,7 +28,7 @@ const About = () => (
   <div className="About page">
     <h1>About</h1>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quia vero, corporis vel rerum cum assumenda voluptates aperiam in vitae, illum dolore. Obcaecati repudiandae corporis aspernatur, nihil temporibus dolore quae!
+      Simple layout con Bootstrap.
     </p>
   </div>
 );
@@ -33,47 +37,10 @@ const Contact = () => (
   <div className="Contact page">
     <h1>Contact</h1>
     <p>
-      @rulokoba
+      http://rulo.me
     </p>
   </div>
 );
-
-const posts = [
-  {id: '001', title: 'Alpha'},
-  {id: '002', title: 'Beta'},
-  {id: '003', title: 'Gamma'}
-];
-
-const Post = ({ match }) => {
-  const post = posts.filter(post => post.id === match.params.postId)[0];
-  if (!post) {
-    return null;
-  }
-  return (
-    <div>
-      <h3>{match.params.postId}</h3>
-      <h1>{post.title}</h1>
-    </div>
-  )
-};
-
-/*
-class Post extends Component {
-  render() {
-    let match = this.props.match;
-    const post = posts.filter(post => post.id === match.params.postId)[0];
-    if (!post) {
-      return null;
-    }
-    return (
-      <div>
-        <h3>{match.params.postId}</h3>
-        <h1>{post.title}</h1>
-      </div>
-    )
-  }
-}
-*/
 
 
 const Navbar = (props) => (
@@ -118,7 +85,9 @@ class App extends Component {
 
                 <div className="col-sm-3 col-md-2 sidebar">
                   <ul className="nav nav-sidebar">
-                    {posts.map( post => <li key={post.id}><Link to={`/post/${post.id}`}>{post.title}</Link></li> )}
+                    <li><Link to={'/example/helloworld'}>Hello World</Link></li>
+                    <li><Link to={'/example/helloyou'}>Hello You</Link></li>
+                    <li><Link to={'/example/hellos'}>Hellos</Link></li>
                   </ul>
                 </div>
 
@@ -126,7 +95,9 @@ class App extends Component {
                   <Route path="/" exact component={Home} />
                   <Route path="/about" component={About} />
                   <Route path="/contact" component={Contact} />
-                  <Route path="/post/:postId" component={Post} />
+                  <Route path="/example/helloworld" component={HelloWorld} />
+                  <Route path="/example/helloyou" component={HelloYou} />
+                  <Route path="/example/hellos" component={Hellos} />
                 </div>
 
               </div>
