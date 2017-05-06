@@ -14,6 +14,7 @@ import './App.css';
 import HelloWorld from './HelloWorld';
 import HelloYou from './HelloYou';
 import Hellos from './Hellos';
+import Musicart from './Musicart';
 
 const Home = () => (
   <div className="Home page">
@@ -88,6 +89,7 @@ class App extends Component {
                     <li><Link to={'/example/helloworld'}>Hello World</Link></li>
                     <li><Link to={'/example/helloyou'}>Hello You</Link></li>
                     <li><Link to={'/example/hellos'}>Hellos</Link></li>
+                    <li><Link to={'/example/musicart'}>Musicart</Link></li>
                   </ul>
                 </div>
 
@@ -98,6 +100,7 @@ class App extends Component {
                   <Route path="/example/helloworld" component={HelloWorld} />
                   <Route path="/example/helloyou" component={HelloYou} />
                   <Route path="/example/hellos" component={Hellos} />
+                  <Route path="/example/musicart" component={Musicart} />
                 </div>
 
               </div>

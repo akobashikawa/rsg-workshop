@@ -2,9 +2,9 @@
 
 # Workshop
 
-## Hellos
+## Fetch
 
-Reutilizando componentes en varias rutas.
+Traer datos de un endpoint.
 
 ---
 

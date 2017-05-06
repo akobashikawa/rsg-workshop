@@ -17,8 +17,8 @@ class NameInput extends Component {
 		return (
 			<div className="NameInput">
 				<form onSubmit={this.submitHandler}>
-					<input type="text" placeholder="Your name" ref={input => this.nameInput = input}/>
-					<button>Hello</button>
+					<input type="text" placeholder={this.props.placeholder || "Your name"} ref={input => this.nameInput = input}/>
+					<button>{this.props.buttonlabel || "Hello"}</button>
 				</form>
 			</div>
 		);
