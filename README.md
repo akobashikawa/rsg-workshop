@@ -27,6 +27,7 @@
 - [11-simple-routes](https://github.com/akobashikawa/rsg-workshop/tree/11-simple-routes)
 - [12-bootstrap-jquery](https://github.com/akobashikawa/rsg-workshop/tree/12-bootstrap-jquery)
 - [13-hellos](https://github.com/akobashikawa/rsg-workshop/tree/13-hellos)
+- [14-fetch](https://github.com/akobashikawa/rsg-workshop/tree/14-fetch)
 
 ---
 
