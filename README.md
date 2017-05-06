@@ -2,9 +2,9 @@
 
 # Workshop
 
-## Simple Routes
+## Bootstrap + jQuery
 
-Usar React Router para establecer algunas rutas simples.
+Usar Bootstrap para el layout.
 
 ---
 
